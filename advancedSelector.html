@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Selector</title>
+    <style>
+        /* tag selector */
+        p {
+            color: blue;
+        }
+        /* class selector */
+        .red {
+            color: red;
+        }   
+        /* id selector */
+        #two {
+            color: rgb(248, 153, 12);
+        }
+        ol, ul {
+            background-color: rgb(131, 198, 225);
+            border-left: 3px solid rgb(28, 28, 90);
+            padding-top: 10px;
+            padding-bottom: 10px;
+            /* css box model */
+        }
+        .bold {
+            font-weight: 700;
+        }
+        .green {
+            color: green;
+        }
+        .heighlight {
+            background-color: rgb(248, 153, 12);
+        }
+        .red.bold{
+            font-size: 1.5rem;
+        }
+        article > p {                             /* for direct child of article */
+            color: rgb(33, 194, 95);
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>this is a heading</h1>
+        <p class="heighlight">this is a paragraph</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+        <div>
+            <p>this is a paragraph</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+        </div>
+    </article>
+    <ol>
+        <li>this is a list</li>
+        <li >this is another</li>
+        <li>Lorem ipsum dolor sit amet</li>
+        <li>Lorem ipsum dolor dore</li>
+    </ol>
+    <ul>
+        <li>this is a list</li>
+        <li class="red bold" >this is another</li>
+        <li>Lorem ipsum dolor sit amet</li>
+        <li class="bold green" >Lorem ipsum dolor dore</li>
+</body>
+</html>
